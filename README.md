@@ -51,3 +51,47 @@
        In C, any assignment,such as
               c = getchar();
        is an expression and has a value, which is the value of the left hand side after the assigment.
+    - Statements and Blocks:
+    ```
+       An expression such as **x = 0** or **i++** or **printf(...)** becomes a _statement_ when it is 
+    followed by a semicolon, as in
+       > x =0;
+       > i++;
+       > printf(...);
+    In C, the semicolon is a statement terminator, rather than a separator as it is in languages like
+    Pascal.  
+    
+    Braces *{* and *}* are used to group declarations and statements together into a _compound statement_,
+    or _block_, so that they are syntactically equivalent to a single statement.The braces that surround
+    the statements of a function are one obvious example; braces around multiple statements after an _if_,
+    _else_,_while_,or _for_ are another.(Variables can be declared inside _any_ block;we will talk about
+    this in Chapter 4.) There is no semicolon after the right brace that ends a block.
+    ```
+    - left value:  
+    ```
+    In C,the concept was renamed as "locator value"
+    "l-value" refers to memory location which identifies an object.l-value may appear as either left
+    hand or right hand side of an assignment operater(=).l-value offten represents as identifier.
+    ```
+    - right value:  
+    ```
+    "r-value" refers to data value that is stored at some address in memory. A r-value is an expression
+    that can't have a value assigned to it which r-value can appear on right but not on left hand side 
+    of an assignment operator(=).
+    Note: The unary &(address-of) operator requires an lvalue as its operand.That is,&n is a valid 
+    expression only if n is an lvalue.Thus,an expression such as &12 is an error.Again,12 does not refer
+    to an object, so it's not addressable.
+    ```
+    - Objects and Lvalues:
+    ```
+    An _Object_ is a named region of storage;an _lvalue_ is an expression referring to an object.
+    An obvious example of an lvalue expression is an identifier with suitable type and storage class.
+    ```
+    - side effect:  
+    ```
+
+    ```
+    - undefined behaviour:  
+    ```
+
+    ```
